@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mood-board {
+    width: 360px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#building-elevation {
+    flex: 0 0 33%;
+    padding: 0;
+}
+
+#building-elevation img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#material-texture .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#material-texture .swatch {
+    text-align: center;
+}
+
+#material-texture .swatch img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#material-texture .swatch p {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#color-palette .palette {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#color-palette .color-swatch {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+#color-palette p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#design-feature .feature {
+    margin-bottom: 15px;
+}
+
+#design-feature .feature img {
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#design-feature .feature p {
+    font-size: 12px;
+    text-align: center;
+}
